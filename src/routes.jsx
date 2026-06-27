@@ -10,6 +10,7 @@ import Dashboard from "./pages/dashboard/Dashboard";
 import AllStudent from "./pages/people/student/AllStudent";
 import StudentList from "./pages/people/student/StudentList";
 import AllTeachers from "./pages/people/teacher/AllTeacher";
+import { PageNotFound } from "./pages/PageNotFound";
 
 
 
@@ -24,6 +25,10 @@ const AppRoutes = () => {
         <Route path="/students/all" element={<AllStudent />} />
         <Route path="/students/list" element={<StudentList />} />
         <Route path="/pages/people/teacher/AllTeacher" element={<AllTeachers />} />
+
+
+        <Route path="*" element={<PageNotFound />} />
+
 
       </Route>
 
